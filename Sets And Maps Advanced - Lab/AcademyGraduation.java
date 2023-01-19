@@ -24,7 +24,8 @@ public class AcademyGraduation {
         studentGrades
                 .forEach((student, grades) -> {
                     double averageGrade = grades.stream().mapToDouble(Double::doubleValue).average().orElse(0.0);
-
+                       
+                    // too precise calculation of average grade
                     DecimalFormat formatedGrade = new DecimalFormat("0.######");
                     System.out.printf("%s is graduated with %s%n", student, formatedGrade.format(averageGrade));
                 });
