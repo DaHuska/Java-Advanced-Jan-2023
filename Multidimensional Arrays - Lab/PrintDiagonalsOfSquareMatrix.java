@@ -28,8 +28,7 @@ public class PrintDiagonalsOfSquareMatrix {
 
         List<String> firstDiagonal = new ArrayList<>();
         List<String> secondDiagonal = new ArrayList<>();
-
-        // wrong second diagonal
+        
         for (int i = 0; i < matrix.length; i++) {
             firstDiagonal.add(matrix[i][i]);
         }
